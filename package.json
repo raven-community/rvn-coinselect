@@ -1,0 +1,53 @@
+{
+  "name": "rvn-coinselect",
+  "version": "1.0.0",
+  "description": "A transaction input selection module for ravencoin.",
+  "keywords": [
+    "coinselect",
+    "coin",
+    "unspents",
+    "wallet",
+    "BIP32",
+    "management",
+    "utxo",
+    "transaction",
+    "fee",
+    "optimization",
+    "optimizing",
+    "ravencoin"
+  ],
+  "homepage": "https://github.com/raven-community/rvn-coinselect",
+  "bugs": {
+    "url": "https://github.com/raven-community/rvn-coinselect/issues"
+  },
+  "license": "MIT",
+  "author": "Daniel Cousens",
+  "contributors": [
+    "MSFTserver"
+  ],
+  "files": [
+    "accumulative.js",
+    "blackjack.js",
+    "break.js",
+    "index.js",
+    "split.js",
+    "utils.js"
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raven-community/coinselect.git"
+  },
+  "scripts": {
+    "coverage": "nyc --check-coverage --branches 100 --functions 100 tape test/*.js",
+    "standard": "standard",
+    "test": "npm run standard && npm run unit",
+    "unit": "tape test/*.js"
+  },
+  "devDependencies": {
+    "nyc": "^8.3.2",
+    "standard": "*",
+    "tape": "^4.5.1"
+  },
+  "dependencies": {}
+}
