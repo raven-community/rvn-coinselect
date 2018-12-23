@@ -2,7 +2,7 @@
 
 An unspent transaction output (UTXO) selection module for ravencoin.
 
-**WARNING:** Value units are in `corbe`s, **not** Ravencoin.
+**WARNING:** Value units are in `satoshi`s, **not** Ravencoin.
 
 
 ## Algorithms
@@ -24,7 +24,7 @@ This is calculated independently by `utils.finalize`, irrespective of the algori
 
 ``` javascript
 let coinSelect = require('rvn-coinselect')
-let feeRate = 55 // corbes per byte
+let feeRate = 55 // satoshis per byte
 let utxos = [
   ...,
   {
