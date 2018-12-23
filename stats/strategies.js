@@ -71,7 +71,7 @@ function proximal (utxos, outputs, feeRate) {
   return accumulative(utxos, outputs, feeRate)
 }
 
-// similar to bitcoind
+// similar to ravend
 function random (utxos, outputs, feeRate) {
   utxos = shuffle(utxos)
 
